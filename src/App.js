@@ -1,14 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Header from "./components/header";
+import Data from "./data.json";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Header />
+
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Click on an image to earn points, but don't click on any more than
+          once!
         </p>
         <a
           className="App-link"
@@ -18,9 +21,9 @@ function App() {
         >
           Learn React
         </a>
-      </header>
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 export default App;
