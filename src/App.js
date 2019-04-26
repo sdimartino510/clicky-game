@@ -4,6 +4,11 @@ import Header from "./components/header";
 import Data from "./data.json";
 
 class App extends Component {
+  state = {
+    Data,
+    score: 0,
+    highScore: 0
+  };
   render() {
     return (
       <div className="App">
@@ -13,14 +18,6 @@ class App extends Component {
           Click on an image to earn points, but don't click on any more than
           once!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </div>
     );
   }
