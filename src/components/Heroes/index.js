@@ -11,7 +11,7 @@ function Heroes(props) {
         <img onClick={clickCounter} alt={props.name} src={props.image} />
       </div>
       <div className="content">
-        <strong>Name:</strong> {props.name}
+        <strong>{props.name}</strong>
       </div>
     </div>
   );

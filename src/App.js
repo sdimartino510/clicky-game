@@ -3,7 +3,6 @@ import "./App.css";
 import Header from "./components/header";
 import Data from "./data.json";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
 import Heroes from "./components/Heroes";
 
 class App extends Component {
@@ -19,15 +18,14 @@ class App extends Component {
         <Header />
 
         <p>
-          Click on an image to earn points, but don't click on any more than
-          once!
+          Click on a comic book cover to earn a point. Click the same one twice
+          and you lose!
         </p>
-        <Wrapper>
-          <Title>The Avengers</Title>
+        <Wrapper className="wrapper">
           {this.state.Data.map(Data => (
             <Heroes
               id={Data.id}
-              // key={Data.id}
+              key={Data.id}
               name={Data.name}
               image={Data.image}
             />
