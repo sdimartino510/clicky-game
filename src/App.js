@@ -12,7 +12,6 @@ class App extends Component {
     highScore: 0
   };
   handleClick = id => {
-    console.log("I clicked on ", id);
     this.state.Data.find((hero, i) => {
       if (hero.id === id) {
         if (Data[i].count === 0) {
