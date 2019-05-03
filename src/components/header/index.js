@@ -5,7 +5,7 @@ const Header = props => (
     Avengers Memory Game
     <div className="title">{props.children}</div>
     <div className="scores">
-      Score: {props.score} | Highscore: {props.highScore}
+      Score: {props.score} | High Score: {props.highScore}
     </div>
   </div>
 );

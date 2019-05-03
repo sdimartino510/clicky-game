@@ -29,6 +29,10 @@
   margin: 0 auto;
 }
 
+.scores {
+  font-size: calc(20px + 2vmin);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
